@@ -2,14 +2,6 @@ MIT License
 
 Copyright (c) 2026 Glenn Wilton, O2 Creative Limited
 
-The contents of this `samples/` directory (helper modules, demo HTML pages,
-reference docs) are released under the MIT License, separate from the
-MPL-2.0 license that governs the jsColorEngine library in `src/`.
-
-The intent of this dual-licensing arrangement is so that developers can
-freely copy, adapt and ship the demo / helper code without taking on
-MPL obligations, while the engine itself remains MPL-2.0.
-
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
 to deal in the Software without restriction, including without limitation
