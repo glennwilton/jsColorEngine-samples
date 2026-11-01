@@ -1,0 +1,25 @@
+{
+  "name": "jscolorengine-samples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser demos and LUT tools for jsColorEngine.",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node serve.js",
+    "test": "jest",
+    "tiff-samples": "node LutBuilder/lut-tiff-cli.js --make-samples",
+    "sync-iccimage": "node -e \"const fs=require('fs');fs.copyFileSync('../jsICCImage/iccimage.js','ICCImage/iccimage.js');fs.copyFileSync('../jsICCImage/docs/API.md','ICCImage/ICCImage.md')\"",
+    "bench-browser": "esbuild benchmark/browser-entry.js --bundle --platform=browser --format=iife --global-name=_jsceBench --outfile=benchmark/bench.bundle.js --external:http --external:https --external:fs --external:path --external:util --external:child_process"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.tests.js"
+    ]
+  },
+  "devDependencies": {
+    "canvas": "^3.2.3",
+    "esbuild": "^0.28.0",
+    "jest": "^29.7.0",
+    "utif": "^3.1.0"
+  }
+}
